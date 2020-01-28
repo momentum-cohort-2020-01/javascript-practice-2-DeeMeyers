@@ -41,11 +41,42 @@ function remove(arr, item){
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
+function sum(arr){
+    let i = 0;
+    let t = 0;
+    while(i < (arr.length)){
+        t = (t + arr[i]);
+        i++;
+    }
+    return t
+}
+
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
+function average(arr1){
+    arr1.push("egg")
+      if(arr1 == "egg"){
+          console.log("please put an array, bub")
+      }
+      else{
+          arr1.pop();
+          let i1 = 0;
+          let t1 = 0;
+          while(i1 < (arr1.length)){
+              t1 = (t1 + arr1[i1]);
+              i1++;
+          }
+  
+          let avg = (t1/(arr1.length))
+          return avg
+      }
+  }
+
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+
+
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
