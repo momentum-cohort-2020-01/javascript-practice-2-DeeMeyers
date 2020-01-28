@@ -18,10 +18,25 @@ function remove(arr, item){
         }
         return arr
     }
+
 }
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
+
+function remove(arr, item){
+    if(arr.indexOf(item) < 0){
+        return arr
+    }
+    else{
+        let arr2 = arr.slice()
+        while(arr2.indexOf(item) >= 0){
+          let idx = arr2.indexOf(item);
+          arr2.splice(idx, 1);
+        }
+        return arr2
+    }
+}
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
