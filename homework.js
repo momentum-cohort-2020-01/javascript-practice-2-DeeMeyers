@@ -6,6 +6,22 @@
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
+function remove(arr, item){
+    // set arr to new array
+    let newArr = arr;
+    // console.log("newArr = " + newArr);
+
+    // find posistion of 'item' in array
+    let idx = newArr.indexOf(item);
+    // console.log("idx = " + idx);
+
+    // selcting and removing the item. will output just the item at the index position. 
+    newArr.splice(idx, 1);
+    // console.log(newArr)
+    //returning the desired answer of the array minus the item
+    return newArr
+
+}
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
