@@ -13,12 +13,13 @@ function remove(arr, item){
     }
     else{
         while(arr.indexOf(item) >= 0){
-          idx = arr.indexOf(item);
+          let idx = arr.indexOf(item);
           arr.splice(idx, 1);
         }
         return arr
     }
 }
+
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
