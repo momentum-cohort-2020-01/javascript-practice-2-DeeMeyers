@@ -118,6 +118,18 @@ function minimum(arr2){
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 
+function selectionSort(list){
+    if(list.length <= 0){
+        console.log("yo, no.")
+    }
+    else{
+        let ref = list.slice(0);
+        
+    }
+}
+
+
+
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
 //
