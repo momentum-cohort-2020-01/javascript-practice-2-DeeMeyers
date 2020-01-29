@@ -76,6 +76,22 @@ function average(arr1){
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
+function minimum(arr2){
+    arr2.push("test");
+    if(arr2 == "test"){
+      console.log("please put an array, bub");
+    }
+    else{
+      arr2.pop();
+      let m = Infinity;
+      for (let m1 of arr2){
+          if(m1 < m){
+              m = m1;
+          }
+      }
+      return m
+    }
+  }
 
 
 // 6. There are many techniques to sort arrays in programming. Your programming
