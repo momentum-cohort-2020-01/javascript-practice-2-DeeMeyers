@@ -152,3 +152,22 @@ function selectionSort(list){
 //
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
+
+
+function textList(folks){
+    if(folks.length == 0){ //empty case
+        console.log(folks.length)
+        return console.log("nothin' to see here first");
+    }
+    else if(folks.length == 1){ //solo case
+        if (folks === ['']){
+            return console.log("nothin' to see here second");
+        }
+        else{
+        return folks
+        }
+    }
+    else{   //case for list of folks
+        return console.log(folks.toString())
+    }
+}
