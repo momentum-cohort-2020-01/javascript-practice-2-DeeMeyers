@@ -125,13 +125,23 @@ function selectionSort(list){
     }
     else{
         let ref = list.slice(0);
+        console.log(ref);
         let result = [];
-        while(ref.legnth > 0){
+        let i = ref.length;
+        while(i > 0){
+            console.log(ref.length);
             let tempMin = minimum(ref);
-            ref.splice(ref.indexOf(tempMin), 1)
-            result.unshift(tempMin);
+            console.log(tempMin);
+            ref.splice(ref.indexOf(tempMin), 1);
+            result.push(tempMin);
+            i = ref.length;
         }
+        if(result == list){
+            return list;
+        }
+        else{
         return result
+        }
     }
 }
 
