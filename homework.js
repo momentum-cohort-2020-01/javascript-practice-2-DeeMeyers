@@ -119,12 +119,19 @@ function minimum(arr2){
 // to see how. This may make more sense to you.
 
 function selectionSort(list){
-    if(list.length <= 0){
-        console.log("yo, no.")
+    if(list.length <= 1){
+        console.log("yo, no.");
+        return list;
     }
     else{
         let ref = list.slice(0);
-        
+        let result = [];
+        while(ref.legnth > 0){
+            let tempMin = minimum(ref);
+            ref.splice(ref.indexOf(tempMin), 1)
+            result.unshift(tempMin);
+        }
+        return result
     }
 }
 
